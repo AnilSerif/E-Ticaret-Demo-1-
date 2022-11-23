@@ -1,0 +1,4 @@
+<h3> {{title}} </h3>
+<ul class="list-group"  *ngFor="let category of categories" >
+    <li class="list-group-item task" routerLink="products/category/{{category.id}}">{{category.name}}</li>
+</ul>

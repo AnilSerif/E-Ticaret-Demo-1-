@@ -1,0 +1,46 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 20,
+      "categoryId": 1,
+      "description": "Asus Zenbook",
+      "img": "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 15,
+      "categoryId": 2,
+      "description": "A4 Tech",
+      "img": "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ"
+    },
+    {
+      "name": "Buzdolabı",
+      "description": "Arçelik No-Frost ",
+      "img": "https://picsum.photos/id/0/200/100",
+      "price": "820",
+      "categoryId": "1",
+      "id": 3
+    }
+  ],
+  "Categories": [
+    {
+      "id": 1,
+      "name": "Elektronik"
+    },
+    {
+      "id": 2,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 3,
+      "name": "İletişim"
+    },
+    {
+      "id": 4,
+      "name": "Müzik"
+    }
+  ]
+}

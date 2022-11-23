@@ -1,0 +1,26 @@
+<h2 *ngIf="Products; else NoProducts">{{Title}}</h2>
+<div class="mb-3">
+    <input type="email" class="form-control" id="productName" [(ngModel)]="Arama"/>
+    <div class="form-text" *ngIf="Arama"> Şu an <strong> {{Arama}}</strong> aradınız </div>
+</div>
+
+
+<div class="row">
+    <ng-template #NoProducts>
+        <div class="alert alert-danger" role="alert">
+            Bu kategoride ürün yoktur.
+        </div>
+    </ng-template>
+  <div class="card " style="width: 18rem; margin-top:5px;" *ngFor="let Product of Products | productpipe:Arama">
+    <img src="{{Product.img}}" class="card-img-top task" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title">{{Product.name}}</h5>
+      <p class="card-text">{{Product.description}}</p>
+         
+      <p class="card-text">{{Product.price|kur}}</p>
+
+      <a href="#" class="btn btn-primary" (click)="SepeteEkle(Product)"> Satın Al</a>
+      <a href="#" class="btn btn-danger ms-2" (click)="SepetCikar(Product)"> Sepetten Çıkart </a>
+    </div>
+</div>
+</div>
